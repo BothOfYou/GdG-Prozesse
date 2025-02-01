@@ -1,13 +1,40 @@
 .info {
     background-color: lightgray;
 }
+.navItem {
+    cursor: pointer;
+}
+
+#Icons
+
+.icon {
+    height: 10%;
+    width: 10%;
+}
+.icon.icon-application::before {
+   
+    content: url(images/icons/Application_Icon.png);
+}
+.icon .icon-animation::before {
+    content: url(images/icons/Animation_Icon.png);
+}
+.icon .icon-diagram::before {
+    content: url(images/icons/Diagram_Icon.png);
+}
+.icon .icon-flowchart::before {
+    content: url(images/icons/Flowchart_Icon.png);
+}
+.icon .icon-logo::before {
+    content: url(images/icons/Logo_Icon.png);
+}
 
 #Project4
-.flowchart {
+
+img.flowchart {
     height: 70%;
     width: 70%;
 }
-.flowchart2 {
+img.flowchart2 {
     height: 80%;
     width: 80%;
 }
