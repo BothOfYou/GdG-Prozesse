@@ -1,35 +1,74 @@
 .info {
     background-color: lightgray;
 }
-.navItem {
-    cursor: pointer;
-}
+
+#Naviagtion
+.navBar {
+    height: 100%;
+    width: 15%;
+    background-color: lightgrey;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  .navBar .navItem {
+    padding: 8px 20px;
+    float: left;
+    width: 100%;
+    border: none;
+    display: block;
+    outline: 0;
+    text-align: left;
+  }
+  
+  .navItem:hover {
+    color: #000;
+    background-color: #8f8f8f;
+  }
+  
+  .navButton {
+    border:none;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+  }
+  
 
 #Icons
-
 .icon {
     height: 10%;
     width: 10%;
 }
-.icon.icon-application::before {
+.icon.icon-application:before {
    
     content: url(images/icons/Application_Icon.png);
 }
-.icon .icon-animation::before {
+.icon.icon-animation:before {
     content: url(images/icons/Animation_Icon.png);
 }
-.icon .icon-diagram::before {
+.icon.icon-diagram:before {
     content: url(images/icons/Diagram_Icon.png);
 }
-.icon .icon-flowchart::before {
+.icon.icon-flowchart:before {
     content: url(images/icons/Flowchart_Icon.png);
 }
-.icon .icon-logo::before {
+.icon.icon-logo:before {
     content: url(images/icons/Logo_Icon.png);
 }
 
-#Project4
+#Content
+.content-block {
+    margin-left: 15%;
+}
 
+#Project4
 img.flowchart {
     height: 70%;
     width: 70%;
