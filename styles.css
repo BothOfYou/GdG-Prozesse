@@ -7,28 +7,30 @@ html {
 }
 
 #Naviagtion
-.navBar {
+
+.nav-container {
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
-  }
+    background-color: lightseagreen;
+}
+
   
-  .navItem {
-      padding: 8px 20px;
-    float: left;
-    /* width: 100%; */
-    border: none;
-    outline: 0;
+.navBar > .navItem {
+    padding: 8px 20px;
+    width: 100px;
+    margin: 10px;
     text-align: left;
+    line-height: 75px;
+    font-size: 30px;
     cursor:pointer;
-  }
-  
-  .navItem:hover {
+}
+
+.navBar > .navItem:hover {
     color: #000;
     background-color: #8f8f8f;
-  }
-  
-  /* .navButton {
+}
+
+/* .navButton {
     border:none;
     display:inline-block;
     vertical-align:middle;
@@ -38,21 +40,24 @@ html {
     background-color:inherit;
     text-align:center;
     white-space:nowrap
-  } */
+} */
   
 
 #Icons
-.navItem img {
+
+.navItem > img {
     width: 100%;
     height: auto;
 }
 
 #Content
+
 .content-block {
     margin-left: 15%;
 }
 
 #Project4
+
 img.flowchart {
     height: 70%;
     width: 70%;
