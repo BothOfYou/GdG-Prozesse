@@ -18,7 +18,7 @@ html, body {
     font-size: 20px;
     text-align: center;
     width: 50%;
-    padding: 0.1%;
+    padding: 0.1% 0.6% 0.1% 0.6%;
     background-color: #e2dee5;
     border-radius: 25px 15px;
 }
@@ -144,13 +144,23 @@ html, body {
  border: 2px solid black;
 }
 
+/* #Project */
+.project-container {
+    display: flex;
+    flex-direction: column;  
+}
+
+.project {
+    width: 50%;
+    margin: 1%;
+}
 
 /* #Project4 */
-img.flowchart {
+/* img.flowchart {
     height: 70%;
     width: 70%;
 }
 img.flowchart2 {
     height: 80%;
     width: 80%;
-}
+} */
