@@ -77,8 +77,8 @@ h3 {
 }
 .info-container {
     display: flex;
-    align-items: baseline;
-    gap: 15%;
+    justify-content: space-between;
+    align-items: flex-start; 
 }
 .info {
     width: 60%;
@@ -127,25 +127,26 @@ h3 {
 }
 
 .attributes.rating tr > td {
- display: flex;
- flex-direction: row;  
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;  
 }
 
 .rating-block{
- width: 100%; 
- height: 25px; 
- margin-right: 5px;
- box-sizing: border-box; 
+    width: 100%; 
+    height: 25px; 
+    margin-right: 5px;
+    box-sizing: border-box; 
 }
 
 .rating-block.full {
- background-color: black; 
- border: 2px solid black; 
+    background-color: black; 
+    border: 2px solid black; 
 }
 
 .rating-block.empty {
- background-color: transparent; 
- border: 2px solid black;
+    background-color: transparent; 
+    border: 2px solid black;
 }
 
 /* #Project */
