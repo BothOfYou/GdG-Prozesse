@@ -69,23 +69,39 @@ html, body {
 }
 .content-block > h2 {
     position: relative;
-    left: 5%;
+    left: 2%;
 }
-
+.info-container {
+    display: flex;
+    align-items: baseline;
+    gap: 15%;
+}
+.info {
+    width: 60%;
+    margin: 1%;
+    font-size: 20px;    
+    background-color: #e2dee5;
+    padding: 0.3% 1% 0.3% 1%;
+    text-align: justify;
+    line-height: 1.2;
+    border-radius: 15px 25px;
+}
 .attributes{
-   background-color: #e2dee5;
-    float: right;
-    width: 33%;
+    background-color: #e2dee5;
+    width: 40%;
+    margin: 1%;
+    line-height:1.3;
     border-radius: 25px 15px;
 }
 
 .attributes h2 {
     text-align: center;
+    padding-bottom: 1%;    
+    border-bottom: 3px dashed grey;
 }
 
 .attributes > table {
     padding: 2%;
-    border-top: 3px dashed grey;
     width: 100%; 
 }
 
@@ -96,6 +112,7 @@ html, body {
     padding-left: 2%;
 }
 
+/* Rating */
 .attributes.rating {
     line-height: 2;
     width: 20%;
@@ -104,7 +121,7 @@ html, body {
 .attributes.rating > table {
  width: 100%
 }
-/* Rating */
+
 .attributes.rating tr > td {
  display: flex;
  flex-direction: row;  
@@ -127,16 +144,6 @@ html, body {
  border: 2px solid black;
 }
 
-.info {
-    background-color: #e2dee5;
-    padding: 0.3% 1% 0.3% 1%;
-    width: 50%;
-    text-align: justify;
-    line-height: 1.5;
-    border-radius: 15px 25px;
-    position: relative;
-    left: 5%;
-}
 
 /* #Project4 */
 img.flowchart {
