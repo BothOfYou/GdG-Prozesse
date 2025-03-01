@@ -5,6 +5,12 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.headline {
+    margin-left: 8%; 
+    padding: 1%;
+    background-color: #abd5c0; 
+}
+
 /* #Naviagtion */
 
 .navBar {
@@ -15,6 +21,8 @@ html {
     justify-content: flex-start;
     max-width: 8%;
     height: 100%;
+    top: 0;
+    left: 0;
     overflow-y: auto;
 }
 .navBar > .navItem {
@@ -25,7 +33,6 @@ html {
     cursor:pointer;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 .navBar > .navItem:hover {
     background-color: #33593d36;
@@ -33,7 +40,9 @@ html {
 
 .navItem > span {
     font-size: 20px;
-}
+    text-align: center;
+}   
+
 
 /* #Icons */
 
@@ -44,11 +53,34 @@ html {
 /* #Content */
 
 .content-block {
-    background-color:rgba(217, 231, 220, 0.473);
-    margin-left: 9%;
-    width: 100%;
+    background-color: rgba(217, 231, 220, 0.473);
+    margin-left: 8%; /* Lässt Platz für die Nav-Bar */
     padding: 2%;
     min-height: 100%;
+/*   position: relative; */
+}
+.attributes_explained {
+    float: right;
+    width: 30%;
+}
+
+.attributes_explained h2 {
+    text-align: center;
+}
+
+.attributes_explained > table {
+    padding: 2%;
+    margin: 2%;
+    border: 2px solid;
+    width: 100%; /* Nimmt die volle Breite der .attributes_explained */
+    box-sizing: border-box; /* Inkludiert Padding und Rand in der Breitenberechnung */
+}
+
+.attributes_explained tr > th {
+    text-align: right;
+}
+.attributes_explained tr > td {
+    padding-left: 2%;
 }
 .info {
     background-color: lightgray;
