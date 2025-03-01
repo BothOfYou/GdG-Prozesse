@@ -141,6 +141,9 @@ h3 {
     margin-right: 5px;
     box-sizing: border-box; 
 }
+.rating-block.medium {
+    width: 120px;
+}
 
 .rating-block.full {
     background-color: black; 
