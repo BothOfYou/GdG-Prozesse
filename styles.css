@@ -23,6 +23,10 @@ html, body {
     border-radius: 25px 15px;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 /* #Naviagtion */
 .navBar {
     display: flex;
@@ -150,9 +154,25 @@ html, body {
     flex-direction: column;  
 }
 
+/* for 1 per row */
 .project {
-    width: 50%;
-    margin: 1%;
+    width: 100%;
+}
+
+.project > iframe,
+.project > img {
+    max-width: 70%;
+}
+
+/* for more than per row */
+.projects {
+    flex-direction: row;  
+    width: 100%;
+}
+
+.projects > img {
+    max-width: 30%;
+    margin: 0% 0.4% 0% 0.4%;
 }
 
 /* #Project4 */
