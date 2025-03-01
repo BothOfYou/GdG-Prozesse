@@ -1,62 +1,61 @@
 html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Stelle sicher, dass der gesamte HTML- und Body-Bereich 100% der Höhe haben */
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.info {
-    background-color: lightgray;
-}
+/* #Naviagtion */
 
-#Naviagtion
-
-.nav-container {
+.navBar {
     display: flex;
+    position: fixed;
     flex-direction: column;
-    background-color: lightseagreen;
+    background-color: #abd5c0;
+    justify-content: flex-start;
+    max-width: 8%;
+    height: 100%;
+    overflow-y: auto;
 }
-
-  
 .navBar > .navItem {
-    padding: 8px 20px;
-    width: 100px;
-    margin: 10px;
-    text-align: left;
-    line-height: 75px;
-    font-size: 30px;
+    display: flex;
+    margin: 2% ;
+    padding: 3%;
+    line-height: 200%;
     cursor:pointer;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
 .navBar > .navItem:hover {
     color: #000;
     background-color: #8f8f8f;
 }
 
-/* .navButton {
-    border:none;
-    display:inline-block;
-    vertical-align:middle;
-    overflow:hidden;
-    text-decoration:none;
-    color:inherit;
-    background-color:inherit;
-    text-align:center;
-    white-space:nowrap
-} */
-  
+.navItem > span {
+    font-size: 20px;
+}
 
-#Icons
+/* #Icons */
 
 .navItem > img {
-    width: 100%;
-    height: auto;
+    width: 30%;
 }
 
-#Content
+/* #Content */
 
 .content-block {
-    margin-left: 15%;
+    background-color:red;
+    margin-left: 8%; /* Lässt Platz für die Nav-Bar */
+    padding: 2%;
+    min-height: 100%;
+}
+.info {
+    background-color: lightgray;
 }
 
-#Project4
+/* #Project4 */
 
 img.flowchart {
     height: 70%;
