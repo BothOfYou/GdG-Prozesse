@@ -3,7 +3,6 @@ html {
     padding: 0;
     height: 100%; /* Stelle sicher, dass der gesamte HTML- und Body-Bereich 100% der Höhe haben */
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 /* #Naviagtion */
@@ -29,8 +28,7 @@ html {
     text-align: center;
 }
 .navBar > .navItem:hover {
-    color: #000;
-    background-color: #8f8f8f;
+    background-color: #33593d36;
 }
 
 .navItem > span {
@@ -40,14 +38,15 @@ html {
 /* #Icons */
 
 .navItem > img {
-    width: 30%;
+    width: 45%;
 }
 
 /* #Content */
 
 .content-block {
-    background-color:red;
-    margin-left: 8%; /* Lässt Platz für die Nav-Bar */
+    background-color:rgba(217, 231, 220, 0.473);
+    margin-left: 9%;
+    width: 100%;
     padding: 2%;
     min-height: 100%;
 }
