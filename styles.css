@@ -1,4 +1,4 @@
-html {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%; /* Stelle sicher, dass der gesamte HTML- und Body-Bereich 100% der Höhe haben */
@@ -9,10 +9,18 @@ html {
     margin-left: 8%; 
     padding: 1%;
     background-color: #abd5c0; 
+    text-align: center;
+}
+
+.about-me {
+    position: relative;
+    left: 50%;
+    font-size: 30px;
+    text-align: center;
+    width: 40%;
 }
 
 /* #Naviagtion */
-
 .navBar {
     display: flex;
     position: fixed;
@@ -45,13 +53,11 @@ html {
 
 
 /* #Icons */
-
 .navItem > img {
     width: 45%;
 }
 
 /* #Content */
-
 .content-block {
     background-color: rgba(217, 231, 220, 0.473);
     margin-left: 8%; /* Lässt Platz für die Nav-Bar */
@@ -59,35 +65,40 @@ html {
     min-height: 100%;
 /*   position: relative; */
 }
-.attributes_explained {
+.attributes{
+   background-color: #e2dee5;
     float: right;
-    width: 30%;
+    width: 33%;
+    border-radius: 25px 15px;
 }
 
-.attributes_explained h2 {
+.attributes h2 {
     text-align: center;
 }
 
-.attributes_explained > table {
+.attributes > table {
     padding: 2%;
-    margin: 2%;
-    border: 2px solid;
+    border-top: 3px dashed grey;
     width: 100%; /* Nimmt die volle Breite der .attributes_explained */
-    box-sizing: border-box; /* Inkludiert Padding und Rand in der Breitenberechnung */
 }
 
-.attributes_explained tr > th {
+.attributes tr > th {
     text-align: right;
 }
-.attributes_explained tr > td {
+.attributes tr > td {
     padding-left: 2%;
 }
+
 .info {
-    background-color: lightgray;
+    background-color: #e2dee5;
+    padding: 0.3% 1% 0.3% 1%;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.5;
+    border-radius: 15px 25px;
 }
 
 /* #Project4 */
-
 img.flowchart {
     height: 70%;
     width: 70%;
