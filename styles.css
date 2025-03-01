@@ -6,7 +6,7 @@ html, body {
 }
 
 .headline {
-    margin-left: 8%; 
+    margin-left: 10%; 
     padding: 1%;
     background-color: #abd5c0; 
     text-align: center;
@@ -63,11 +63,15 @@ html, body {
 /* #Content */
 .content-block {
     background-color: rgba(217, 231, 220, 0.473);
-    margin-left: 8%; /* Lässt Platz für die Nav-Bar */
+    margin-left: 10%; 
     padding: 2%;
     min-height: 100%;
-/*   position: relative; */
 }
+.content-block > h2 {
+    position: relative;
+    left: 5%;
+}
+
 .attributes{
    background-color: #e2dee5;
     float: right;
@@ -82,7 +86,7 @@ html, body {
 .attributes > table {
     padding: 2%;
     border-top: 3px dashed grey;
-    width: 100%; /* Nimmt die volle Breite der .attributes_explained */
+    width: 100%; 
 }
 
 .attributes tr > th {
@@ -90,6 +94,37 @@ html, body {
 }
 .attributes tr > td {
     padding-left: 2%;
+}
+
+.attributes.rating {
+    line-height: 2;
+    width: 20%;
+    
+}
+.attributes.rating > table {
+ width: 100%
+}
+/* Rating */
+.attributes.rating tr > td {
+ display: flex;
+ flex-direction: row;  
+}
+
+.rating-block{
+ width: 100%; 
+ height: 25px; 
+ margin-right: 5px;
+ box-sizing: border-box; 
+}
+
+.rating-block.full {
+ background-color: black; 
+ border: 2px solid black; 
+}
+
+.rating-block.empty {
+ background-color: transparent; 
+ border: 2px solid black;
 }
 
 .info {
